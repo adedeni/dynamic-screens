@@ -82,11 +82,6 @@ class Home extends StatelessWidget {
                         onTap: () {
                           // print("tapped");
                         },
-
-                        child: Container(
-                          // decoration: BoxDecoration(
-                          //   borderRadius: BorderRadius.circular(200),
-                          // ),
                           child: Column(
                             children: [
                               Text(
@@ -97,7 +92,7 @@ class Home extends StatelessWidget {
                               ),
                             ],
                           ),
-                        ),
+                        
                       ),
                     ),
                   ],

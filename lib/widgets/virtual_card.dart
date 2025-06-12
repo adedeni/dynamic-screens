@@ -41,7 +41,7 @@ class VirtualCard extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(AppLayout.getWidth(context, 40)),
             decoration: BoxDecoration(
-              color: const Color(0xFFF4F3F8).withOpacity(0.5), // ← semi-transparent
+              color: const Color(0xFFF4F3F8).withAlpha((255 * 0.5).toInt()), 
               shape: BoxShape.circle,
             ),
           ),
@@ -54,7 +54,7 @@ class VirtualCard extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(AppLayout.getWidth(context, 37)),
             decoration: BoxDecoration(
-              color:  const Color(0xFFE7E7E7).withOpacity(0.5), // ← semi-transparent
+              color:  const Color(0xFFE7E7E7).withAlpha((255 * 0.5).toInt()),
               shape: BoxShape.circle,
             ),
           ),
