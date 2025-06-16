@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:screens/screens/home.dart';
+import 'package:screens/screens/login.dart';
 import 'package:screens/utils/app_layout.dart';
 import 'package:screens/utils/styles.dart';
 import '../screens/settings.dart';
@@ -17,6 +18,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions =<Widget> [
     const Home(),
     const Settings(),
+    const Login(),
   ];
   void _onItemTapped(int index) {
     setState(() {
@@ -38,10 +40,15 @@ class _BottomBarState extends State<BottomBar> {
              label: 'Dashboard',
           ),
           BottomNavigationBarItem(
-              icon: Icon(FluentSystemIcons.ic_fluent_person_filled),
-              activeIcon: Icon(FluentSystemIcons.ic_fluent_person_filled),
-             label: 'Profile',
+              icon: Icon(FluentSystemIcons.ic_fluent_settings_regular),
+              activeIcon: Icon(FluentSystemIcons.ic_fluent_settings_filled),
+             label: 'Settings',
           ),
+          BottomNavigationBarItem(
+              icon: Icon(FluentSystemIcons.ic_fluent_key_regular),
+              activeIcon: Icon(FluentSystemIcons.ic_fluent_key_filled),
+             label: 'Login',
+          )
         ],
         currentIndex: _selectedIndex,
         backgroundColor: Colors.white,
