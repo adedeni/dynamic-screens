@@ -53,11 +53,8 @@ class Login extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(6, (index) {
                 return Padding(
-                  padding: EdgeInsets.only(
-                    right:
-                        index < 6
-                            ? AppLayout.getWidth(context, 13)
-                            : 0, //it ensure after the 5th index is generated it give zero padding to the 6th index
+                  padding: EdgeInsets.all(
+                     AppLayout.getWidth(context, 13), //it ensure after the 5th index is generated it give zero padding to the 6th index
                   ),
                   child: InkWell(
                     onTap: () {
